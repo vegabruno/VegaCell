@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VegaCell - Servicio Técnico de Celulares</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>VegaCell</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#acerca">Acerca de</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section id="inicio" class="inicio">
+      <h2>Reparación Profesional de Celulares</h2>
+      <p>En <strong>VegaCell</strong> ofrecemos soluciones rápidas y seguras para tu dispositivo. Confía en técnicos especializados.</p>
+      <img class="logo" src="./imagenes/logo.png" alt="Reparando celular">
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="servicios">
+      <h2>Servicios</h2>
+      <div class="contenedor-servicios">
+        <article class="servicio">
+          <img src="./imagenes/modulo.jpg" alt="Cambio de módulo">
+          <h3>Cambio de Módulo</h3>
+          <p>Reemplazamos pantallas dañadas o sin respuesta táctil con repuestos de calidad.</p>
+          <a href="#contacto" class="boton"><i class="fa-solid fa-screwdriver-wrench"></i> Solicitar servicio</a>
+        </article>
+
+        <article class="servicio">
+          <img src="./imagenes/bateria.avif" alt="Cambio de batería">
+          <h3>Cambio de Batería</h3>
+          <p>Reemplazo de baterías agotadas o hinchadas. Recuperá la autonomía de tu teléfono.</p>
+          <a href="#contacto" class="boton"><i class="fa-solid fa-bolt"></i> Solicitar servicio</a>
+        </article>
+
+        <article class="servicio">
+          <img src="./imagenes/pindecarga.webp" alt="Cambio de pin de carga">
+          <h3>Cambio de Pin de Carga</h3>
+          <p>Solucionamos problemas de carga y conexión con puertos nuevos y originales.</p>
+          <a href="#contacto" class="boton"><i class="fa-solid fa-plug"></i> Solicitar servicio</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ACERCA -->
+    <section id="acerca" class="acerca">
+      <h2>Acerca de Nosotros</h2>
+      <p>Somos un servicio técnico especializado en reparación de celulares de todas las marcas. 
+         En <strong>VegaCell</strong> trabajamos con repuestos de primera calidad y atención personalizada.</p>
+      <video controls width="500">
+        <source src="./videos/videoreparacion.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <p>Completá el siguiente formulario y te responderemos a la brevedad:</p>
+      
+      <form action="https://formspree.io/f/xpwyvzrn" method="POST" class="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="mensaje">Mensaje (problema e información del dispositivo):</label>
+        <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- MENSAJES RECIBIDOS -->
+    <section id="mensajes" class="mensajes">
+      <h2>Mensajes Recibidos</h2>
+
+      <div class="mensaje-ejemplo">
+        <p><strong>Juan Pérez:</strong> Mi celular Samsung A13 no enciende, podría ser la batería?</p>
+        <p><strong>Email:</strong> juanperez@gmail.com</p>
+      </div>
+
+      <div class="mensaje-ejemplo">
+        <p><strong>Ana López:</strong> El pin de carga de mi Moto G9 plus se mueve y no carga.</p>
+        <p><strong>Email:</strong> analopez@gmail.com</p>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 VegaCell - Servicio Técnico de Celulares</p>
+  </footer>
+
+</body>
+</html>
